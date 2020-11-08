@@ -196,7 +196,26 @@ h2 {
 .development a {
     text-decoration: none;
     color: var(--White);
+    font-size: 30px;
+    font-weight: bolder;
 }
+.development a:hover {
+    font-size: 45px;
+}
+.development .run-buddy-img {
+    background-image:url("../images/Run-buddy.png");
+    height: 250px;
+    width: 300px;
+    background-size: cover;
+}
+.development .challenge-1-img {
+    background-image: url("../images/Challenge-1.png");
+    background-size: cover;
+    height: 250px;
+    width: 300px;
+    background-size: cover;
+}
+
 /* Development Projects Section Style End */
 
 /* Contact Section Style Start */
