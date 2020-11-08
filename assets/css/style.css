@@ -21,10 +21,16 @@ h2 {
     header {
         background-color: var(--Grey);
         padding: 20px 35px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
     }
         header h1 {
             font-weight: bolder;
-            font-size: 150%;
+            font-size: 50px;
             color: var(--Turquoise);
             margin: 0;
             display: inline;
@@ -35,17 +41,27 @@ h2 {
             color: var(--Turquoise);
         }
         header nav {
-            float: right;
             margin: 7px 0;
         }
-        header nav ul li {
-            display: inline;
+        header nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
         }
-        header nav ul li {
+        header nav ul li a {
             margin: 0 30px;
             font-weight: lighter;
-            font-size: 22px;
+            font-size: 1vw;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
+        header nav ul li a:hover {
+            background: var(--White);
+            color: var(--Turquoise);
+            border-radius: 5px;
+            text-shadow: none;
+          }
 /* Apply Styles to <Body> */
         body {
             color: var(--Grey);
@@ -55,10 +71,13 @@ h2 {
             background: var(--Turquoise);
             width: 100%;
             padding: 40px 35px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
             }
         footer h3 {
-            display: inline;
             color: var(--Grey);
+            font-size: 30px;
             text-align: right;
             }
         section {
@@ -68,30 +87,30 @@ h2 {
 /* Apply Styles to Hero Section */
     .hero {
         background-image: url("../images/kelsc-logo.jpg");
-        height: 25%;
-        background-size:contain;
-        background-position: center;
-        position: relative;
+        background-size:auto;
+        background-position: left;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-attachment: fixed;
+        background-position:25%;
         }
-    }
-    .hero-title h2 {
-        font-size: 30px;
-        text-align: end;
-    }
+
 /* End Styles to Hero Section */
 
 /* Start Section Formatting */
 .section-title {
+    font-size: 48px;
     color: var(--Turquoise);
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
     text-align: left;
+    margin: 0 auto 35 px auto;
+    width: 50%
 }
 .primary {
     border-color: var(--Grey);
-    font-size: 45px;
 }
 .secondary {
     border-color: var(--Grey);
@@ -100,64 +119,82 @@ h2 {
 /* End Section Formatting */ 
 
 
-/* About Section Style Start */
+/* About Section Style Start */}
 .intro {
-    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .intro p {
     line-height: 1.7;
     color: var(--Grey);
     width: 80%;
     font-size: 20px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    text-align: left;
+}
+.intro a {
+    text-decoration: none;
+    color: var(--Turquoise);
+    font-size: larger;
 }
 /* About Section Style End */
 
 /* Ventures  Section Style Start */
 .business {
-    text-align: left;
+    background: var(--Grey);
 }
 .business p {
     line-height: 1.7;
-    color: var(--Grey);
+    color: var(--Turquoise);
     width: 80%;
     font-size: 20px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    text-align: left; 
 }
+.business ul li a {
+    text-decoration: none;
+    color: var(--White);
+    font-size: larger;
+}
+
 /* Ventures Section Style End */
 
 /* Interests Section Style Start */
-.hobbies {
-    text-align: left;
-}
 .hobbies p {
     line-height: 1.7;
     color: var(--Grey);
     width: 80%;
     font-size: 20px;
     margin: 0 auto; 
+    text-align: left;
 }
 /* Interests Section Style End */
 
 /* Development Projects Section Style Start */
 .development {
-    text-align: left;
+    background: var(--Grey);
 }
 .development p {
     line-height: 1.7;
-    color: var(--Grey);
+    color: var(--Turquoise);
     width: 80%;
     font-size: 20px;
     margin: 0 auto; 
+    text-align: left;
+}
+.development a {
+    text-decoration: none;
+    color: var(--White);
 }
 /* Development Projects Section Style End */
 
 /* Contact Section Style Start */
-.engage {
-    text-align: left;
-}
 .engage a {
     text-decoration: none;
+    color: var(--Turquoise)
 }
 /* Contact Section Style End */
 
@@ -165,5 +202,51 @@ h2 {
         img {
             border: var(--Grey);
         }
- 
+ /* General Formatting */
+ .flex-row {
+     display: flex;
+ }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    header nav ul li a {
+      font-size: 20px;
+    }    
+
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .section-title {
+      width: 75%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
 
