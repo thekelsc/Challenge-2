@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+/* Apply Root Variables */
+
+:root {
+    --Turquoise: #27cba8;
+    --White: #ffffff;
+    --Grey: #666;
+}
+h2 {
+    Font size: 40px;
+    margin: 0;
+    text-align: start;
+    vertical-align: bottom;
+}
+
+/* Apply Styles to <Header> */
+    header {
+        background-color: var(--Grey);
+        padding: 20px 35px;
+    }
+        header h1 {
+            font-weight: bolder;
+            font-size: 150%;
+            color: var(--Turquoise);
+            margin: 0;
+            display: inline;
+        }
+
+        header a {
+            text-decoration: none;
+            color: var(--Turquoise);
+        }
+        header nav {
+            float: right;
+            margin: 7px 0;
+        }
+        header nav ul li {
+            display: inline;
+        }
+        header nav ul li {
+            margin: 0 30px;
+            font-weight: lighter;
+            font-size: 22px;
+        }
+/* Apply Styles to <Body> */
+        body {
+            color: var(--Grey);
+            font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+        }
+        footer {
+            background: var(--Turquoise);
+            width: 100%;
+            padding: 40px 35px;
+            }
+        footer h3 {
+            display: inline;
+            color: var(--Grey);
+            text-align: right;
+            }
+        section {
+            padding: 60px;
+            }
+
+/* Apply Styles to Hero Section */
+    .hero {
+        background-image: url("../images/kelsc-logo.jpg");
+        height: 25%;
+        background-size:contain;
+        background-position: center;
+        position: relative;
+        }
+    }
+    .hero-title h2 {
+        font-size: 30px;
+        text-align: end;
+    }
+/* End Styles to Hero Section */
+
+/* Start Section Formatting */
+.section-title {
+    color: var(--Turquoise);
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+    text-align: left;
+}
+.primary {
+    border-color: var(--Grey);
+    font-size: 45px;
+}
+.secondary {
+    border-color: var(--Grey);
+    font-size: 25px;
+}
+/* End Section Formatting */ 
+
+
+/* About Section Style Start */
+.intro {
+    text-align: left;
+}
+.intro p {
+    line-height: 1.7;
+    color: var(--Grey);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto; 
+}
+/* About Section Style End */
+
+/* Ventures  Section Style Start */
+.business {
+    text-align: left;
+}
+.business p {
+    line-height: 1.7;
+    color: var(--Grey);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto; 
+}
+/* Ventures Section Style End */
+
+/* Interests Section Style Start */
+.hobbies {
+    text-align: left;
+}
+.hobbies p {
+    line-height: 1.7;
+    color: var(--Grey);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto; 
+}
+/* Interests Section Style End */
+
+/* Development Projects Section Style Start */
+.development {
+    text-align: left;
+}
+.development p {
+    line-height: 1.7;
+    color: var(--Grey);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto; 
+}
+/* Development Projects Section Style End */
+
+/* Contact Section Style Start */
+.engage {
+    text-align: left;
+}
+.engage a {
+    text-decoration: none;
+}
+/* Contact Section Style End */
+
+/* Image Formatting */
+        img {
+            border: var(--Grey);
+        }
+ 
+
