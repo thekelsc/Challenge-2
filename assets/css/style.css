@@ -127,6 +127,14 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.intro img {
+    width:50%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+}
 .intro p {
     line-height: 1.7;
     color: var(--Grey);
