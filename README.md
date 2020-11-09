@@ -8,3 +8,7 @@ I began by wireframing the desired website design, before creating the shell HTM
 The page while not yet beautiful, does reflect my company's logo, branding, and general aesthetic. 
 
 **<Disclaimer> All linked corporate pages (ex: KelseyCreveling.com, KelsC.Consulting, TheConsultantsCloset.com, and Safik Advsrs were developed by Erin Hutchinson of Blue Heeler Arts.) <Disclaimer>**
+
+https://thekelsc.github.io/Challenge-2/ 
+
+![KelsC. Logo] (https://github.com/thekelsc/Challenge-2/blob/master/assets/images/kelsc-logo.jpg?raw=true)
